@@ -5,7 +5,7 @@ export const navbarlinks = [
   },
   {
     title: "Shop",
-    link: "/shop",
+    link: "",
     subtitles: [
       {
         title: "Men",
@@ -30,8 +30,8 @@ export const navbarlinks = [
     ],
   },
   {
-    title: "Brands",
-    link: "/brands",
+    title: "Categories",
+    link: "/categories",
   },
   {
     title: "New Arrivals",

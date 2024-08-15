@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [openSubtitles, setOpenSubtitles] = useState(false);
+  const [openSubtitles, setOpenSubtitles] = useState(true);
   console.log(menuOpen);
   return (
     <div className="">
@@ -46,7 +46,7 @@ const Navbar = () => {
                     <div className="py-4  w-full"></div>
                     <div className=" px-10 py-10  bg-navbar flex justify-center items-center gap-10">
                       {data?.subtitles?.map((item, idx) => (
-                        <div key={idx}>
+                        <div className="hover:text-blue-600" key={idx}>
                           <Link to={item.link}>
                             <li>{item.title}</li>
                           </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
         </div>
         {/* right icons  */}
         <div
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setMenuOpen(false)}
           className="flex  items-center lg:gap-8 gap-2"
         >
           {/* my account  */}
@@ -85,7 +85,7 @@ const Navbar = () => {
                   <p>login to access your account</p>
                 </div>
 
-                <div>
+                <div className="flex gap-4">
                   <button className="font-semibold text-white px-4 py-2 bg-blue-500">
                     Login
                   </button>
@@ -117,27 +117,42 @@ const Navbar = () => {
       {/* mobile side drawer  */}
 
       <div
-        className={`h-screen bg-navbar w-full absolute transition-all duration-300 ease-in-out p-10  ${
+        className={`h-screen lg:hidden bg-navbar w-full absolute transition-all duration-300 ease-in-out p-10  ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <ul className=" flex flex-col  gap-6 text-lg">
           {navbarlinks.map((data, idx) => (
-            <>
-              <div onClick={() => setOpenSubtitles(!openSubtitles)}>
-                <Link to={data.link} key={idx}>
+            <div key={idx}>
+              {data.link ? (
+                <Link to={data.link}>
                   <li className="font-semibold">{data.title}</li>
                 </Link>
-              </div>
+              ) : (
+                <div
+                  onClick={() => setOpenSubtitles(!openSubtitles)}
+                  className="flex items-center gap-4"
+                >
+                  <Link>
+                    <li className="font-semibold">{data.title}</li>
+                  </Link>
+                  {openSubtitles ? (
+                    <Icon className="text-2xl" icon="iconamoon:arrow-up-2" />
+                  ) : (
+                    <Icon className="text-2xl" icon="iconamoon:arrow-down-2" />
+                  )}
+                </div>
+              )}
 
+              {/* mobile sublinks */}
               {data.subtitles && (
                 <div
-                  className={`p-4 bg-orange-100  flex-col gap-6 ${
+                  className={`p-4 rounded-md mt-3 bg-[#F0E8D0]  flex-col gap-6 ${
                     openSubtitles ? "flex" : "hidden"
                   }`}
                 >
                   {data?.subtitles?.map((item, idx) => (
-                    <Link to={item.path} key={idx}>
+                    <Link to={item.link} key={idx}>
                       <div>
                         <li>{item.title}</li>
                       </div>
@@ -145,7 +160,7 @@ const Navbar = () => {
                   ))}
                 </div>
               )}
-            </>
+            </div>
           ))}
         </ul>
       </div>
