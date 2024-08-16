@@ -42,8 +42,8 @@ export const navbarlinks = [
     link: "/best-sellers",
   },
   {
-    title: "Offers",
-    link: "/offers",
+    title: "Add Products",
+    link: "/add-products",
   },
   {
     title: "Contact Us",

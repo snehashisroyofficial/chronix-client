@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import Home from "../Pages/Home";
 import ErrorPage from "../Shared/ErrorPage";
 import Categories from "../Pages/Categories/Categories";
+import AddProducts from "../Pages/Categories/AddProducts";
 
 const route = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const route = createBrowserRouter([
       {
         path: "/categories",
         element: <Categories />,
+      },
+      {
+        path: "/add-products",
+        element: <AddProducts />,
       },
     ],
   },
