@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Home from "../Pages/Home";
 import ErrorPage from "../Shared/ErrorPage";
-import Categories from "../Pages/Categories/Categories";
-import AddProducts from "../Pages/Categories/AddProducts";
+import AddProducts from "../Pages/AllProducts/AddProducts";
+import AllProducts from "../Pages/AllProducts/AllProducts";
 
 const route = createBrowserRouter([
   {
@@ -16,8 +16,8 @@ const route = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/categories",
-        element: <Categories />,
+        path: "/all-products",
+        element: <AllProducts />,
       },
       {
         path: "/add-products",

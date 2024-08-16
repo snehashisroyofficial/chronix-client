@@ -30,8 +30,8 @@ export const navbarlinks = [
     ],
   },
   {
-    title: "Categories",
-    link: "/categories",
+    title: "All Products",
+    link: "/all-products",
   },
   {
     title: "New Arrivals",

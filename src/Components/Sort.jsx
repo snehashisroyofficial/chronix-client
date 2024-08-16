@@ -2,15 +2,15 @@ import React from "react";
 import useProduct from "../Hooks/useProduct";
 
 const Sort = () => {
-  const { product } = useProduct();
+  const { sort } = useProduct();
 
   const handleSort = (e) => {
     const data = e.target.value;
-    product(data);
+    sort(data);
   };
 
   return (
-    <div className="px-4 py-2 border-2 flex items-center gap-2">
+    <div className="px-4 py-2 border-2 flex items-center gap-2 rounded-lg">
       <h1>Sort By: </h1>
       <select
         onChange={handleSort}

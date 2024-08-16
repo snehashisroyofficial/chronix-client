@@ -1,0 +1,363 @@
+[
+  {
+    "title": "Titan Edge Ceramic",
+    "brand": "Titan",
+    "description": "The Titan Edge Ceramic is a marvel of modern craftsmanship, featuring an ultra-thin profile that exudes sophistication. Its ceramic case and strap provide a sleek, polished look that is perfect for formal occasions, making it an elegant choice for those who appreciate refined style.",
+    "price": 22995,
+    "discounted_price": 19995,
+    "reviews": 4.7,
+    "image": "https://m.media-amazon.com/images/I/61RPXclW5KL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Fastrack Reflex 3.0",
+    "brand": "Fastrack",
+    "description": "The Fastrack Reflex 3.0 is a versatile digital smartwatch designed for the modern lifestyle. With comprehensive fitness tracking, heart rate monitoring, and customizable watch faces, it offers functionality and style for those who are always on the move.",
+    "price": 2495,
+    "discounted_price": 1999,
+    "reviews": 4.3,
+    "image": "https://m.media-amazon.com/images/I/61u2Rr7tBRL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Sonata Gold",
+    "brand": "Sonata",
+    "description": "The Sonata Gold is a classic gold-plated analog watch that features a timeless design. Its elegant appearance makes it an ideal accessory for traditional wear, offering a touch of luxury and sophistication to any outfit.",
+    "price": 1499,
+    "discounted_price": 1199,
+    "reviews": 4.1,
+    "image": "https://m.media-amazon.com/images/I/71HnaDDboKL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Timex Expedition",
+    "brand": "Timex",
+    "description": "Built for rugged adventures, the Timex Expedition is a durable analog-digital watch designed to withstand the elements. Its sturdy strap and robust features make it an excellent choice for outdoor enthusiasts who need reliability and toughness in their timepiece.",
+    "price": 5895,
+    "discounted_price": 4995,
+    "reviews": 4.5,
+    "image": "https://shop.timexindia.com/cdn/shop/products/tw2v00600.jpg?v=1690232685"
+  },
+  {
+    "title": "Fossil Gen 5E",
+    "brand": "Fossil",
+    "description": "The Fossil Gen 5E combines the power of Wear OS by Google with modern smartwatch features. It includes heart rate tracking, GPS functionality, and customizable dials, making it a versatile accessory for tech-savvy users who value both style and performance.",
+    "price": 18995,
+    "discounted_price": 16995,
+    "reviews": 4.6,
+    "image": "https://m.media-amazon.com/images/I/71CjJ7kcF0S._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Maxima Attivo",
+    "brand": "Maxima",
+    "description": "The Maxima Attivo is a stylish analog watch that features a sleek metal strap. Its versatile design makes it suitable for both casual and formal occasions, offering a blend of elegance and functionality to complement any outfit.",
+    "price": 1395,
+    "discounted_price": 995,
+    "reviews": 4.0,
+    "image": "https://m.media-amazon.com/images/I/61-GrfCYVKL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Casio G-Shock",
+    "brand": "Casio",
+    "description": "Designed for extreme durability, the Casio G-Shock is a shock-resistant digital watch built to withstand rigorous activities. Its robust construction and sporty design make it ideal for those who lead an active lifestyle and require a reliable timepiece.",
+    "price": 9995,
+    "discounted_price": 8995,
+    "reviews": 4.8,
+    "image": "https://m.media-amazon.com/images/I/61E+kMgwUVL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Noise ColorFit Pro 3",
+    "brand": "Noise",
+    "description": "The Noise ColorFit Pro 3 is a feature-packed smartwatch equipped with a full-touch display. It offers comprehensive fitness tracking, multiple sports modes, and customizable watch faces, making it a perfect companion for those who are dedicated to their health and fitness goals.",
+    "price": 4999,
+    "discounted_price": 3499,
+    "reviews": 4.2,
+    "image": "https://m.media-amazon.com/images/I/61IZd8JAnWL.jpg"
+  },
+  {
+    "title": "HMT Pilot",
+    "brand": "HMT",
+    "description": "The HMT Pilot is a vintage mechanical watch that stands out with its classic design. Revered by watch enthusiasts, it represents a piece of watchmaking history with its timeless appeal and traditional craftsmanship.",
+    "price": 4995,
+    "discounted_price": 4495,
+    "reviews": 4.4,
+    "image": "https://m.media-amazon.com/images/I/61qfY631OSL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Ajanta Classic",
+    "brand": "Ajanta",
+    "description": "The Ajanta Classic is a simple analog watch featuring a leather strap, making it a versatile option for everyday wear. Its understated design ensures it can be worn with a variety of outfits, offering both functionality and style at an affordable price.",
+    "price": 795,
+    "discounted_price": 695,
+    "reviews": 3.9,
+    "image": "https://m.media-amazon.com/images/I/71z-1LegzzL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "title": "Titan Raga Viva",
+    "brand": "Titan",
+    "description": "The Titan Raga Viva is an elegant analog watch designed for women. It features a sleek metal strap and a beautifully crafted dial, providing a sophisticated touch to any outfit. Its refined design makes it a perfect choice for formal and special occasions.",
+    "price": 5995,
+    "discounted_price": 5495,
+    "reviews": 4.5,
+    "image": "https://m.media-amazon.com/images/I/61KmHWU3MrL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Fastrack Economy",
+    "brand": "Fastrack",
+    "description": "The Fastrack Economy is an affordable yet stylish analog watch with a durable strap. Its design makes it an excellent choice for daily wear, providing a blend of practicality and fashion for budget-conscious consumers.",
+    "price": 1095,
+    "discounted_price": 895,
+    "reviews": 4.0,
+    "image": "https://m.media-amazon.com/images/I/51gV3EUH3wL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Sonata Super Fibre",
+    "brand": "Sonata",
+    "description": "The Sonata Super Fibre is a lightweight and sporty analog watch featuring a fiber strap. Its design is ideal for active lifestyles, offering both durability and comfort for those who lead a dynamic lifestyle.",
+    "price": 799,
+    "discounted_price": 699,
+    "reviews": 4.2,
+    "image": "https://m.media-amazon.com/images/I/71mG-2RT7NL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Timex Marlin",
+    "brand": "Timex",
+    "description": "Inspired by retro designs, the Timex Marlin is an automatic watch that combines classic aesthetics with modern reliability. It features a leather strap and a timeless design, making it a distinguished choice for those who appreciate vintage elegance.",
+    "price": 15995,
+    "discounted_price": 14995,
+    "reviews": 4.7,
+    "image": "https://m.media-amazon.com/images/I/51e4eId29fL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Fossil Neutra Chronograph",
+    "brand": "Fossil",
+    "description": "The Fossil Neutra Chronograph is a stylish chronograph watch that combines functionality with elegance. Featuring a stainless steel strap and a modern design, it offers precision timing and a sophisticated look for those who appreciate both form and function.",
+    "price": 11995,
+    "discounted_price": 10995,
+    "reviews": 4.6,
+    "image": "https://m.media-amazon.com/images/I/71ipABIIMYL._AC_UL1500_.jpg"
+  },
+
+  {
+    "title": "Maxima Hybrid",
+    "brand": "Maxima",
+    "description": "The Maxima Hybrid is a versatile smartwatch that combines the elegance of analog hands with the convenience of smart features. It offers fitness tracking, notifications, and a sleek design, making it a perfect blend of traditional watch aesthetics and modern technology.",
+    "price": 2495,
+    "discounted_price": 1995,
+    "reviews": 4.1,
+    "image": "https://m.media-amazon.com/images/I/714AEIyeizL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Casio Edifice",
+    "brand": "Casio",
+    "description": "The Casio Edifice is a sophisticated timepiece designed for the modern professional. It features a stunning analog-digital display, a durable metal strap, and various functionalities, including world time, stopwatch, and water resistance, making it both stylish and highly functional.",
+    "price": 12995,
+    "discounted_price": 11995,
+    "reviews": 4.8,
+    "image": "https://m.media-amazon.com/images/I/61o81olOLOL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "NoiseFit Endure",
+    "brand": "Noise",
+    "description": "The NoiseFit Endure is a rugged smartwatch crafted for outdoor enthusiasts. With its long battery life, multiple sports modes, and durable design, it’s perfect for those who love adventure and need a watch that can keep up with their active lifestyle.",
+    "price": 4999,
+    "discounted_price": 3999,
+    "reviews": 4.3,
+    "image": "https://m.media-amazon.com/images/I/61csLam3fOL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "HMT Janata",
+    "brand": "HMT",
+    "description": "The HMT Janata is a classic hand-wound mechanical watch that symbolizes Indian watchmaking heritage. Known for its timeless design and reliable craftsmanship, this watch is a favorite among collectors and those who appreciate vintage timepieces.",
+    "price": 3495,
+    "discounted_price": 2995,
+    "reviews": 4.5,
+    "image": "https://m.media-amazon.com/images/I/71mGkfxCtjL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Ajanta Digital",
+    "brand": "Ajanta",
+    "description": "The Ajanta Digital is an affordable digital watch with a simple yet functional design, making it a great choice for kids and young adults. It features an easy-to-read display and is built to withstand daily wear and tear, offering both durability and value for money.",
+    "price": 595,
+    "discounted_price": 495,
+    "reviews": 3.8,
+    "image": "https://m.media-amazon.com/images/I/81xvFbo5dhL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "title": "Titan Octane",
+    "brand": "Titan",
+    "description": "The Titan Octane is a bold analog chronograph watch designed for the adventurous spirit. With its sporty design, precise timekeeping, and robust build, it’s perfect for those who seek both style and performance in a timepiece.",
+    "price": 7995,
+    "discounted_price": 6995,
+    "reviews": 4.4,
+    "image": "https://m.media-amazon.com/images/I/51+giahuUlL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Fastrack Tees",
+    "brand": "Fastrack",
+    "description": "The Fastrack Tees is a youthful and vibrant analog watch, known for its colorful designs that add a pop of fun to any casual outfit. It’s a perfect accessory for young individuals who love to express their personality through their style.",
+    "price": 995,
+    "discounted_price": 795,
+    "reviews": 4.1,
+    "image": "https://m.media-amazon.com/images/I/71-yaJc6Z-L._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Sonata Volt",
+    "brand": "Sonata",
+    "description": "The Sonata Volt is a trendy analog watch that combines contemporary design with a durable strap, making it ideal for everyday wear. Its sleek look and reliable performance make it a great choice for those seeking a fashionable yet practical timepiece.",
+    "price": 1299,
+    "discounted_price": 999,
+    "reviews": 4.0,
+    "image": "https://m.media-amazon.com/images/I/61eat0QWlNL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Timex Command Urban",
+    "brand": "Timex",
+    "description": "The Timex Command Urban is a rugged digital watch with a military-inspired design, built to withstand tough conditions. It is water-resistant, shockproof, and packed with features like alarms, stopwatch, and countdown timer, making it ideal for those who need a durable and reliable timepiece.",
+    "price": 6995,
+    "discounted_price": 5995,
+    "reviews": 4.6,
+    "image": "https://m.media-amazon.com/images/I/810Ds484OmL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Fossil Carlie Mini",
+    "brand": "Fossil",
+    "description": "The Fossil Carlie Mini is a delicate and feminine analog watch that features a slim strap and a minimalist design. It’s perfect for those who prefer a subtle yet elegant look, making it a versatile accessory for both casual and formal occasions.",
+    "price": 9995,
+    "discounted_price": 8995,
+    "reviews": 4.5,
+    "image": "https://m.media-amazon.com/images/I/51ELzNsxpkL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Maxima Fiber",
+    "brand": "Maxima",
+    "description": "The Maxima Fiber is a lightweight analog watch with a durable fiber strap, designed for comfort and resilience. It’s an excellent choice for those who need a reliable everyday watch that doesn’t compromise on style or practicality.",
+    "price": 995,
+    "discounted_price": 795,
+    "reviews": 4.0,
+    "image": "https://m.media-amazon.com/images/I/71huxT9zAfL._AC_AC_SY350_QL15_.jpg"
+  },
+  {
+    "title": "Casio Pro Trek",
+    "brand": "Casio",
+    "description": "The Casio Pro Trek is an outdoor-focused digital watch packed with advanced sensors like altimeter, barometer, and compass, along with solar charging capabilities. It’s the perfect companion for adventurers and nature enthusiasts who require a high-performance timepiece in challenging environments.",
+    "price": 19995,
+    "discounted_price": 17995,
+    "reviews": 4.7,
+    "image": "https://m.media-amazon.com/images/I/61mRhaXW2GL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Noise ColorFit Ultra",
+    "brand": "Noise",
+    "description": "The Noise ColorFit Ultra is a feature-packed smartwatch offering SpO2 monitoring, heart rate tracking, customizable watch faces, and a host of fitness and lifestyle tracking options. It’s designed to keep you connected and informed while maintaining a sleek, modern look.",
+    "price": 5999,
+    "discounted_price": 4499,
+    "reviews": 4.4,
+    "image": "https://m.media-amazon.com/images/I/71nzWfUAt+L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "HMT Kohinoor",
+    "brand": "HMT",
+    "description": "The HMT Kohinoor is a classic mechanical watch that combines a simple and elegant design with reliable performance. It’s a favorite among watch collectors and those who appreciate the craftsmanship and history of traditional timepieces.",
+    "price": 5995,
+    "discounted_price": 5495,
+    "reviews": 4.5,
+    "image": "https://m.media-amazon.com/images/I/61Xk0pM3DNL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Ajanta Royal",
+    "brand": "Ajanta",
+    "description": "The Ajanta Royal is a symbol of elegance and luxury, featuring an exquisite analog design that makes it ideal for formal occasions. Its refined aesthetics are complemented by a high-quality finish and attention to detail, ensuring it stands out at any event. The watch's classic design and premium materials make it a perfect accessory for those who appreciate timeless sophistication.",
+    "price": 1495,
+    "discounted_price": 1295,
+    "reviews": 4.0,
+    "image": "https://m.media-amazon.com/images/I/41jAosyBQiL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "title": "Titan Karishma",
+    "brand": "Titan",
+    "description": "The Titan Karishma offers a blend of affordability and elegance with its gold-tone case and bracelet. Designed to complement traditional attire, this analog watch features a classic design with a touch of modern flair. Its versatile look makes it suitable for a variety of occasions, from formal events to daily wear, while its durable construction ensures long-lasting performance.",
+    "price": 2795,
+    "discounted_price": 2495,
+    "reviews": 4.3,
+    "image": "https://m.media-amazon.com/images/I/71rVFKImezL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Fastrack Black Magic",
+    "brand": "Fastrack",
+    "description": "The Fastrack Black Magic is a sleek and modern analog watch that exudes a minimalist charm. With its striking black dial and matching strap, it offers a contemporary look that’s perfect for those who prefer a subtle yet impactful style. The watch’s clean design is complemented by precise timekeeping and a robust build, making it a great choice for everyday wear.",
+    "price": 1895,
+    "discounted_price": 1595,
+    "reviews": 4.2,
+    "image": "https://m.media-amazon.com/images/I/51ILnuBVwiL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Sonata Stride",
+    "brand": "Sonata",
+    "description": "The Sonata Stride is a versatile digital fitness watch designed to support an active lifestyle. It features step tracking, calorie counting, and a range of other functionalities that help you stay on top of your fitness goals. Its modern design and user-friendly interface make it an excellent choice for individuals who value both form and function in their fitness gear.",
+    "price": 1595,
+    "discounted_price": 1395,
+    "reviews": 4.1,
+    "image": "https://m.media-amazon.com/images/I/71lEw9yg-hL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Timex Ironman",
+    "brand": "Timex",
+    "description": "The Timex Ironman is engineered for athletes and performance enthusiasts. This digital watch comes equipped with lap timers, water resistance, and a range of features tailored for sports and training. Its durable build and advanced functionalities make it a reliable companion for anyone engaged in rigorous physical activities, while its design ensures comfort and ease of use.",
+    "price": 5995,
+    "discounted_price": 4995,
+    "reviews": 4.5,
+    "image": "https://m.media-amazon.com/images/I/61O4NXcbcpS._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Fossil Grant Chronograph",
+    "brand": "Fossil",
+    "description": "The Fossil Grant Chronograph combines classic design with modern functionality. Featuring Roman numerals and a sophisticated leather strap, this chronograph watch merges tradition with contemporary style. It’s perfect for those who appreciate the finer details and seek a watch that offers both aesthetic appeal and reliable performance for any occasion.",
+    "price": 10995,
+    "discounted_price": 9995,
+    "reviews": 4.6,
+    "image": "https://m.media-amazon.com/images/I/71UIocsjBUL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Maxima Attitude",
+    "brand": "Maxima",
+    "description": "The Maxima Attitude is designed to make a bold statement with its striking analog design. It features a standout look that draws attention and expresses confidence. This watch is ideal for individuals who want their accessory to reflect their dynamic personality and assertive style. Its high-quality construction ensures that it remains a reliable and fashionable choice.",
+    "price": 1595,
+    "discounted_price": 1295,
+    "reviews": 4.0,
+    "image": "https://m.media-amazon.com/images/I/71Shj0RikJL._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Casio Vintage",
+    "brand": "Casio",
+    "description": "The Casio Vintage is a retro-inspired digital watch that combines nostalgic design with modern functionality. Featuring a classic metal bracelet and a digital display, this watch evokes a sense of vintage charm while providing contemporary features. It’s a great choice for those who appreciate the fusion of old-school aesthetics with up-to-date technology.",
+    "price": 3995,
+    "discounted_price": 3495,
+    "reviews": 4.7,
+    "image": "https://m.media-amazon.com/images/I/61ybeKQto8L._AC_UY1000_.jpg"
+  },
+  {
+    "title": "NoiseFit Fusion",
+    "brand": "Noise",
+    "description": "The NoiseFit Fusion is a hybrid smartwatch that marries the elegance of analog styling with the convenience of smart features. It offers fitness tracking, notifications, and a sleek design that caters to modern needs while maintaining a classic appearance. This watch is perfect for those who want the best of both worlds: traditional watch aesthetics and advanced technology.",
+    "price": 5999,
+    "discounted_price": 4999,
+    "reviews": 4.4,
+    "image": "https://m.media-amazon.com/images/I/61JbdC9c-FL.jpg"
+  },
+  {
+    "title": "HMT Sona",
+    "brand": "HMT",
+    "description": "The HMT Sona is an iconic mechanical watch renowned for its gold-tone case and exceptional craftsmanship. It represents the rich heritage of Indian watchmaking and is favored by those who appreciate classic elegance. Its timeless design and durable construction make it a cherished addition to any watch collection.",
+    "price": 6995,
+    "discounted_price": 6495,
+    "reviews": 4.5,
+    "image": "https://m.media-amazon.com/images/I/71CuWfBuH2L._AC_UY1000_.jpg"
+  },
+  {
+    "title": "Ajanta Premier",
+    "brand": "Ajanta",
+    "description": "The Ajanta Premier is a sophisticated analog watch that features a metal bracelet and meticulous detailing. Designed for individuals who appreciate fine craftsmanship, this watch exudes elegance and style. Its classic design and high-quality materials make it an ideal choice for formal occasions and everyday wear alike.",
+    "price": 1995,
+    "discounted_price": 1795,
+    "reviews": 4.2,
+    "image": "https://m.media-amazon.com/images/I/71Jzn6pHpkL.jpg"
+  }
+]

@@ -2,8 +2,11 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import useAxiosSecure from "../../Axios/useAxiosSecure";
 
 const AddProducts = () => {
+  const axiosSecure = useAxiosSecure();
+
   const { register, reset, handleSubmit } = useForm();
 
   const imageBBAPi = `https://api.imgbb.com/1/upload?key=${
@@ -22,14 +25,25 @@ const AddProducts = () => {
     const formData = {
       image: res.data.data.display_url,
       title: data.title,
-      subtitle: data.subtitle,
+      // subtitle: data.subtitle,
       price: data.price,
       discounted_price: data.dprice,
-      reviews: data.reviews,
+      reviews: "",
       description: data.description,
     };
 
     console.log(formData);
+
+    axiosSecure
+      .post("/add-product", formData)
+      .then((res) => {
+        console.log(res);
+        console.log(res.data);
+        reset();
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
   return (
     <div className="h-full flex justify-center items-center">
@@ -69,7 +83,7 @@ const AddProducts = () => {
               {...register("title", { required: true })}
             />
           </div>
-          {/* subtitles  */}
+          {/* subtitles
           <div>
             <label
               htmlFor="subtitle"
@@ -85,7 +99,7 @@ const AddProducts = () => {
               className="mt-2 block w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
               {...register("subtitle", { required: true })}
             />
-          </div>
+          </div> */}
           <div className=" flex  items-center gap-2">
             {/* price  */}
             <div>
@@ -122,7 +136,7 @@ const AddProducts = () => {
               />
             </div>
           </div>
-          {/* reviews  */}
+          {/* reviews 
           <div>
             <label
               htmlFor="review"
@@ -138,7 +152,7 @@ const AddProducts = () => {
               className="mt-2 block w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
               {...register("reviews", { required: true })}
             />
-          </div>
+          </div> */}
           {/* description  */}
           <div>
             <label
@@ -158,7 +172,6 @@ const AddProducts = () => {
               {...register("description", { required: true })}
             ></textarea>
           </div>
-
           <button
             type="submit"
             className="w-full py-4 flex  items-center justify-center gap-2 text-lg font-semibold bg-blue-600 text-white"
