@@ -10,8 +10,8 @@ const Sort = () => {
   };
 
   return (
-    <div className="px-4 py-2 border-2 flex items-center gap-2 rounded-lg">
-      <h1>Sort By: </h1>
+    <div className="px-4 py-2 border-2 flex items-center gap-2 rounded-lg ">
+      <h1 className="text-nowrap">Sort By: </h1>
       <select
         onChange={handleSort}
         defaultValue="popularity"
