@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
-import useAxiosSecure from "../../Axios/useAxiosSecure";
+import useAxiosSecure from "../Axios/useAxiosSecure";
 
 const AddProducts = () => {
   const axiosSecure = useAxiosSecure();

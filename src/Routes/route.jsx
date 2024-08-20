@@ -2,8 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Home from "../Pages/Home";
 import ErrorPage from "../Shared/ErrorPage";
-import AddProducts from "../Pages/AllProducts/AddProducts";
-import AllProducts from "../Pages/AllProducts/AllProducts";
+import AllProducts from "../Pages/AllProducts";
+import AddProducts from "../Pages/AddProducts";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 const route = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const route = createBrowserRouter([
       {
         path: "/add-products",
         element: <AddProducts />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },
