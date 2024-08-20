@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
-import useAxiosSecure from "../../Axios/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
+import useAxiosSecure from "../Axios/useAxiosSecure";
 
 export const ProductContext = createContext(null);
 

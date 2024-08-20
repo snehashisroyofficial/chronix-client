@@ -1,11 +1,32 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
+import useAuth from "../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Register = () => {
+  const { createUser } = useAuth();
   const handleOnSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     const data = { email: form.email.value, password: form.password.value };
+    createUser(form.email.value, form.password.value)
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Login Successfull",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "success",
+          title: `${error.message}`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      });
+
     console.log(data);
   };
 

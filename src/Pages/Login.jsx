@@ -1,11 +1,33 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
+import useAuth from "../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Login = () => {
+  const { signIn } = useAuth();
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     const data = { email: form.email.value, password: form.password.value };
     console.log(data);
+
+    signIn(form.email.value, form.password.value)
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Login Successfull",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "success",
+          title: `${error.message}`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      });
   };
 
   return (
