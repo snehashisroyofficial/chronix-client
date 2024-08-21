@@ -79,7 +79,7 @@ const AllProducts = () => {
   };
 
   return (
-    <div className="h-full max-w-7xl mx-auto ">
+    <div className="min-h-screen max-w-7xl mx-auto ">
       <div className="flex flex-col lg:flex-row items-center gap-4 py-6 ">
         <SearchBar />
         <Sort />

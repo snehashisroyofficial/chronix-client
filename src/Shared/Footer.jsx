@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-navbar  ">
-      <div className=" flex flex-col lg:flex-row items-center justify-center lg:justify-around py-10">
+      <div className=" flex flex-col gap-4 lg:flex-row items-center justify-center lg:justify-around py-10">
         <div>
           <h1 className="text-4xl lg:text-6xl font-DM">Chronix</h1>
           <p className="text-lg max-w-80 lg:max-w-sm">
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex justify-center items-center gap-2 py-2">
         <Icon icon="ic:baseline-copyright" />
         <p className="text-sm">Copyright 2024 | Chronix</p>
       </div>

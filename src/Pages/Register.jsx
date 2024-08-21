@@ -31,7 +31,7 @@ const Register = () => {
   };
 
   return (
-    <div className="h-full   flex justify-center items-center">
+    <div className="min-h-screen  flex justify-center items-center">
       <div className="w-full max-w-sm border-2 p-10 rounded-md space-y-5">
         <h1 className="text-2xl flex items-center gap-3">
           Create Account <Icon icon="ic:baseline-create" />
