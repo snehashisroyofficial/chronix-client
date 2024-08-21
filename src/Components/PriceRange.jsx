@@ -16,21 +16,21 @@ const PriceRange = () => {
   return (
     <div className=" border-2 border-green-600 flex items-center gap-2  ">
       <div className="">
-        <form onSubmit={handlePrice} action="">
+        <form onSubmit={handlePrice} className="flex flex-col md:flex-row ">
           <input
             type="number"
             name="min"
-            className="px-4 py-2 outline-none border-r-2 border-green-600 "
+            className="px-4 py-2 w-full outline-none  border border-green-600 "
             placeholder="min: ₹0"
           />
           <input
             type="number"
             name="max"
-            className="px-4 py-2 outline-none "
+            className="px-4 py-2 w-full outline-none  border border-green-600"
             placeholder="max: ₹25000"
           />
           <button
-            className="py-2 px-4 bg-green-600 font-semibold text-white"
+            className="py-2 px-4 w-full bg-green-600 font-semibold text-white"
             type="submit"
           >
             Filter
