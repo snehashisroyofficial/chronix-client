@@ -6,7 +6,6 @@ import AllProducts from "../Pages/AllProducts";
 import AddProducts from "../Pages/AddProducts";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
-import PrivateRoute from "./PrivateRoute";
 
 const route = createBrowserRouter([
   {
@@ -16,11 +15,7 @@ const route = createBrowserRouter([
     children: [
       {
         index: "true",
-        element: (
-          <PrivateRoute>
-            <AllProducts />
-          </PrivateRoute>
-        ),
+        element: <AllProducts />,
       },
 
       {
