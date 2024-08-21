@@ -8,24 +8,25 @@ import SearchBar from "../Components/SearchBar";
 import BrandName from "../Components/BrandName";
 import useProduct from "../Hooks/useProduct";
 import useAxiosSecure from "../Axios/useAxiosSecure";
+import PriceRange from "../Components/PriceRange";
 
 const AllProducts = () => {
   const axiosSecure = useAxiosSecure();
+  const { productMainData, setProductMainData, price, sort } = useProduct();
   const [filterProduct, setFilterProduct] = useState([]);
   const { products, refetch, loading } = useProduct();
   const [currentPage, setCurrentPage] = useState(0);
   const [itemPerPage, setItemPerPage] = useState(8);
 
-  console.log(filterProduct);
-
   useEffect(() => {
     axiosSecure
-      .get(`/pagination?page=${currentPage}&size=${itemPerPage}`)
+      .post(`/pagination?page=${currentPage}&size=${itemPerPage}`, price, sort)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setFilterProduct(res.data);
+        // setProductMainData(res.data);
       });
-  }, [currentPage, itemPerPage, products, refetch]);
+  }, [currentPage, itemPerPage, products, refetch, price, axiosSecure]);
 
   if (loading) {
     return (
@@ -36,6 +37,8 @@ const AllProducts = () => {
   }
 
   const prductsLength = products.length;
+
+  console.log("line line line", sort);
   const totalPage = Math.ceil(prductsLength / itemPerPage);
   const pages = [...Array(totalPage).keys()];
 
@@ -58,9 +61,10 @@ const AllProducts = () => {
 
   return (
     <div className="h-screen max-w-7xl mx-auto ">
-      <div className="flex items-center gap-4 py-6 ">
+      <div className="flex flex-col lg:flex-row items-center gap-4 py-6 ">
         <SearchBar />
         <Sort />
+        <PriceRange />
         <div className="flex items-center gap-2">
           <button onClick={handlePre} className="bg-gray-200 px-4 py-2">
             <Icon className="text-lg" icon="lucide:arrow-left" />
@@ -74,7 +78,7 @@ const AllProducts = () => {
       {/* products data show  */}
 
       <div className="flex flex-col justify-around">
-        <div className="grid grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {filterProduct.map((item, idx) => (
             <div
               key={idx}
@@ -114,7 +118,7 @@ const AllProducts = () => {
 
         {/* pagination */}
         <div className="flex flex-col justify-center items-center py-10">
-          <div className="flex justify-center">
+          <div className="flex flex-wrap  justify-center">
             <button onClick={handlePre} className="bg-gray-200 px-4 py-2">
               <Icon className="text-lg" icon="lucide:arrow-left" />
             </button>

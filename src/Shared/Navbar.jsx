@@ -2,11 +2,31 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navbarlinks } from "./NavLinks";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import useAuth from "../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubtitles, setOpenSubtitles] = useState(true);
   console.log(menuOpen);
+
+  const handleLogOut = () => {
+    logout()
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Logout Complete",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+
   return (
     <div className="">
       <div className="h-20 lg:h-28 flex justify-between lg:justify-around items-center bg-navbar px-2 relative">
@@ -86,16 +106,28 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <Link to="/login">
-                    <button className="font-semibold text-white px-4 py-2 bg-blue-500">
-                      Login
+                  {user ? (
+                    <button
+                      onClick={handleLogOut}
+                      className="font-semibold text-white px-4 py-2 bg-red-500 flex items-center gap-2"
+                    >
+                      Logout{" "}
+                      <Icon className="text-2xl" icon="hugeicons:logout-04" />
                     </button>
-                  </Link>
-                  <Link to="/register">
-                    <button className="font-semibold text-white px-4 py-2 bg-green-500">
-                      Register
-                    </button>
-                  </Link>
+                  ) : (
+                    <>
+                      <Link to="/login">
+                        <button className="font-semibold text-white px-4 py-2 bg-blue-500">
+                          Login
+                        </button>
+                      </Link>
+                      <Link to="/register">
+                        <button className="font-semibold text-white px-4 py-2 bg-green-500">
+                          Register
+                        </button>
+                      </Link>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

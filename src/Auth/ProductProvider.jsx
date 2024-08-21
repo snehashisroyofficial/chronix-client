@@ -1,11 +1,16 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../Axios/useAxiosSecure";
 
 export const ProductContext = createContext(null);
 
 const ProductProvider = ({ children }) => {
-  const [sort, setSort] = useState(null);
+  const [sort, setSort] = useState("");
+  const [price, setPrice] = useState(0);
+
+  // here we store paginate main data
+  const [productMainData, setProductMainData] = useState([]);
+
   const [searchValue, setSearchValue] = useState("");
   const axiosSecure = useAxiosSecure();
 
@@ -22,12 +27,17 @@ const ProductProvider = ({ children }) => {
   });
 
   const authInfo = {
+    setSort,
     sort,
     products,
     refetch,
     loading,
     searchValue,
     setSearchValue,
+    productMainData,
+    setProductMainData,
+    price,
+    setPrice,
   };
 
   return (
