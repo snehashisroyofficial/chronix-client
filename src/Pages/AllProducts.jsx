@@ -49,7 +49,7 @@ const AllProducts = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center">
         <PacmanLoader color="#0019ff" />
       </div>
     );
