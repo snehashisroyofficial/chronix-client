@@ -16,16 +16,13 @@ const route = createBrowserRouter([
     children: [
       {
         index: "true",
-        element: <Home />,
-      },
-      {
-        path: "/all-products",
         element: (
           <PrivateRoute>
             <AllProducts />
           </PrivateRoute>
         ),
       },
+
       {
         path: "/add-products",
         element: <AddProducts />,

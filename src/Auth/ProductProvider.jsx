@@ -5,7 +5,7 @@ import useAxiosSecure from "../Axios/useAxiosSecure";
 export const ProductContext = createContext(null);
 
 const ProductProvider = ({ children }) => {
-  const [sort, setSort] = useState("");
+  const [sort, setSort] = useState("asc");
   const [price, setPrice] = useState(0);
 
   // here we store paginate main data

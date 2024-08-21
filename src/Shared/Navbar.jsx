@@ -44,11 +44,7 @@ const Navbar = () => {
 
         {/* logo section */}
         <div>
-          <img
-            src="https://demo.xpeedstudio.com/marketov2/watch/wp-content/uploads/sites/14/2018/10/logo.png"
-            className="h-16 py-2 lg:py-0"
-            alt=""
-          />
+          <p className="text-3xl lg:text-6xl  font-DM">Chronix</p>
         </div>
         {/* menu section  */}
         <div>

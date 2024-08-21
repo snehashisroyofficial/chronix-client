@@ -8,6 +8,7 @@ export default {
       },
       fontFamily: {
         Lato: ["Urbanist"],
+        DM: ["DM Serif Text"],
       },
     },
   },

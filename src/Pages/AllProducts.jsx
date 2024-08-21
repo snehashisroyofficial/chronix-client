@@ -5,28 +5,47 @@ import Sort from "../Components/Sort";
 
 import { PacmanLoader } from "react-spinners";
 import SearchBar from "../Components/SearchBar";
-import BrandName from "../Components/BrandName";
 import useProduct from "../Hooks/useProduct";
 import useAxiosSecure from "../Axios/useAxiosSecure";
 import PriceRange from "../Components/PriceRange";
 
 const AllProducts = () => {
   const axiosSecure = useAxiosSecure();
-  const { productMainData, setProductMainData, price, sort } = useProduct();
+  const {
+    productMainData,
+    setProductMainData,
+    price,
+    sort,
+    setPrice,
+    searchValue,
+  } = useProduct();
   const [filterProduct, setFilterProduct] = useState([]);
   const { products, refetch, loading } = useProduct();
   const [currentPage, setCurrentPage] = useState(0);
   const [itemPerPage, setItemPerPage] = useState(8);
 
+  console.log(sort);
+
   useEffect(() => {
     axiosSecure
-      .post(`/pagination?page=${currentPage}&size=${itemPerPage}`, price, sort)
+      .post(`/pagination?page=${currentPage}&size=${itemPerPage}`, {
+        price,
+        sort,
+        search: searchValue,
+      })
       .then((res) => {
-        // console.log(res.data);
         setFilterProduct(res.data);
-        // setProductMainData(res.data);
       });
-  }, [currentPage, itemPerPage, products, refetch, price, axiosSecure]);
+  }, [
+    currentPage,
+    itemPerPage,
+    products,
+    refetch,
+    price,
+    axiosSecure,
+    sort,
+    searchValue,
+  ]);
 
   if (loading) {
     return (
@@ -60,7 +79,7 @@ const AllProducts = () => {
   };
 
   return (
-    <div className="h-screen max-w-7xl mx-auto ">
+    <div className="h-full max-w-7xl mx-auto ">
       <div className="flex flex-col lg:flex-row items-center gap-4 py-6 ">
         <SearchBar />
         <Sort />
